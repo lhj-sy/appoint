@@ -1,0 +1,13 @@
+projects:
+  - name: order
+    default:
+        uri: "http://invoices.service.rouchi.com"
+        timeout: 5
+        retry_num: 3
+        retry_duration: 10
+        binding_exchange: "test_event_center1"
+    queues:
+      - queue_name: "test_event_center_queue1"
+        notify_path: "/V1/Test/test"
+        routing_key:
+          - "test_event_center1"

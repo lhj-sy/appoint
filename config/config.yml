@@ -1,0 +1,6 @@
+amqp:
+    uri: "amqp://"
+    host: "172.19.113.249"
+    port: 5672
+    user: "svc"
+    pwd: "85gsddhg7yd"
